@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesiniciostreaming.css">
+    <title>Ventas de Pantallas de Streaming</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Ventas de Pantallas de Streaming</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="/Paginas//ProductosStreaming.html">VENTAS</a></li>
+                <li><a href="/Paginas/VentasStreaming.html">PRODUCTOS</a></li>
+                <li><a href="#Contactenos">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Ventas de Pantallas de Streaming</h2>
+            <form>
+                <label for="tipoPantalla">Tipo de Pantalla:</label>
+                <select id="tipoPantalla" name="tipoPantalla">
+                    <option value="Netflix">Netflix</option>
+                    <option value="Hbo">HBO</option>
+                    <option value="Disney">Disney+</option>
+                    <option value="Amazon">Amazon Prime</option>
+                </select>
+                <br>
+                <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+                <input type="date" id="fechaVencimiento" name="fechaVencimiento">
+                <br>
+                <label for="fechaVenta">Fecha de Venta:</label>
+                <input type="date" id="fechaVenta" name="fechaVenta">
+                <br>
+                <label for="diasVenta">Días de Venta:</label>
+                <input type="number" id="diasVenta" name="diasVenta" readonly>
+                <br>
+                <button type="button" onclick="calcularDiasVenta()">Calcular Días de Venta</button><br>
+                <button id="terminarVenta" onclick="terminarventa">Terminar Venta</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ventas Web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/calculos.js"></script>
+    <script src="../js/CRUD.js"></script>
+</body>
+</html>
